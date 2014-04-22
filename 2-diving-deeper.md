@@ -115,3 +115,10 @@ Boy howdy are they. When you're not careful, floats will run away with your layo
 
 At some point, we have to be able to stay "I do not want this element to wrap around the floated elements". And we can.
 
+```css
+#footer {
+	width: 530px;
+	background: orange;
+	clear: both;
+}
+```
