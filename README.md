@@ -11,7 +11,7 @@ So let's pretend that we are laying out a page in a magazine, and we want to inc
 ```html
 <html>
 	<head>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
 		<img src="cat-scooter.jpg" />
@@ -71,3 +71,23 @@ img {
 ```
 
 Boomtown, U.S.A. That is the essence of floats. It removes the element from the natural flow of the document and allows other elements to wrap around it.
+
+## Property Values
+
+The `float` property has four valid values: `left`, `right`, `none`, and `inherit`.
+
+We've already covered `left` and `right`, let's take a look at the other two.
+
+### None
+
+Sometimes you want to explicitly declare that the element in question should not `float` at all. Setting it to `none` will do the trick just fine. Barring the `position` property, this ensures that the element will fall within the natural flow of the document.
+
+### Inherit
+
+Setting `float: inherit` means that the element will take on the same `float` value as its parent element. For example:
+
+```html
+<div style="float: left;">
+	<p style="float: inherit">This paragraph will also float left because the parent div floats left.</p>
+</div>
+```
