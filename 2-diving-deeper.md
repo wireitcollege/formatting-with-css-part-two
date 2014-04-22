@@ -73,3 +73,29 @@ So:
 ![image](http://i.imgur.com/kIqtt3T.png)
 
 Hashtag math.
+
+## Clearing Floats
+
+Let's add a footer! Easy peasy, right? So now our layout looks like this:
+
+```html		
+<div id="header">
+	This is the header
+</div>
+<div id="content">
+	This is the main content area
+</div>
+<div id="sidebar">
+	This is the sidebar
+</div>
+<div id="footer">
+	This is the footer
+</div>
+```
+And we'll add the following to our CSS:
+
+```css
+#footer {
+	width: 530px;
+}
+```
