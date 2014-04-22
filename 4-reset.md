@@ -35,4 +35,9 @@ body {
 ```
 ## Resources
 
-You can check out some popular CSS Resets [here](http://www.cssreset.com/).
+You can check out some popular CSS Resets [here](http://www.cssreset.com/). It's generally considered good practice to keep your reset CSS in a separate stylesheet and just include it within your `head` tag first, before any other rules are defined.
+
+```html
+<link rel="stylesheet" type="text/css" href="reset.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+```
