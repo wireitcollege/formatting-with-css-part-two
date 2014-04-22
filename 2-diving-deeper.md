@@ -63,7 +63,13 @@ So:
 + 5px (`margin-left` of `#content`) 
 + 10px (`padding-left` of `#content`) 
 + 10px (`padding-right` of `#content`) 
-+ 5px (`margin` between `#content` and `#sidebar`) 
++ 5px (`margin-right` of `#content`)  
++ 5px (`margin-left` of `#sidebar`) 
 + 100px (`width` of `#content`) 
 + 10px (`padding-left` of `#sidebar`) 
 + 10px (`padding-right` of `#sidebar`)
++ 5px (`margin-right` of `#sidebar`)
+
+![image](http://i.imgur.com/kIqtt3T.png)
+
+Hashtag math.
