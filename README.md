@@ -8,7 +8,7 @@ The easiest way to think about floats is to think about images in a magazine.
 
 In this case, the image is "floated" to the left (with a little margin on the right hand side to separate it from the text):
 
-```
+```html
 <html>
 	<head>
 		<style type="text/css">
