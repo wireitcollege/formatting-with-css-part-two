@@ -11,7 +11,7 @@ So let's pretend that we are laying out a page in a magazine, and we want to inc
 ```html
 <html>
 	<head>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
 		<img src="cat-scooter.jpg" />
