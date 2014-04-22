@@ -113,7 +113,7 @@ Boy howdy are they. When you're not careful, floats will run away with your layo
 
 ## Clearing Floats
 
-At some point, we have to be able to stay "I do not want this element to wrap around the floated elements". And we can.
+At some point, we have to be able to stay "I do not want this element to wrap around the floated elements". And we can. Here comes the `clear` property:
 
 ```css
 #footer {
@@ -122,3 +122,7 @@ At some point, we have to be able to stay "I do not want this element to wrap ar
 	clear: both;
 }
 ```
+
+Now we have something a lot closer to what we're looking for.
+
+
