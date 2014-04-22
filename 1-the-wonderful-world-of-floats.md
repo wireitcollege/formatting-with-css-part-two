@@ -72,6 +72,8 @@ img {
 
 Boomtown, U.S.A. That is the essence of floats. It removes the element from the natural flow of the document and allows other elements to wrap around it.
 
+## Property Values
+
 The `float` property has four valid values: `left`, `right`, `none`, and `inherit`.
 
 We've already covered `left`, and `none`, let's take a look at the other two.
