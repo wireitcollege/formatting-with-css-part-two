@@ -114,3 +114,48 @@ Leaving the `#gallery` width unspecified, we can now simply add the `.new-row` c
 This gives us a similar result:
 
 ![image](http://i.imgur.com/LnLeUWs.jpg)
+
+## Badges
+
+```html
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="reset.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div id="badge" class="clearfix">
+			<img src="old-timey-scooter-cat.jpg" />
+			<h1>Tom Cuddles</h1>
+			<h3>Professional Scooter-er</h3>
+			<p>Interested in Full-Time Scooter Employment</p>
+		</div>
+	</body>
+</html>
+```
+
+```css
+body {
+	padding: 10px;
+}
+#badge {
+	border: 1px solid red;
+	padding: 10px;
+	width: 450px;
+	height: 200px;
+}
+#badge img {
+	float:left;
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+	margin: 10px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+```
+
+![image](http://i.imgur.com/kigQBs6.png)
