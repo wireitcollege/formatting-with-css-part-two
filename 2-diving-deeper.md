@@ -49,11 +49,17 @@ This would produce the following:
 
 The `#header` `div`, which is naturally `display:block` remains on its own line. Meanwhile, `#content` and `#sidebar` are both floated left, so they remain inline with each other.
 
-As a reminder: why is `#header` 530px wide? We want it to be the same width as the two elements below it. The actual width that `#header` is taking up is 560px: (530px `width` + 5px `margin-left` + 5px `margin-right` + 10px `padding-left` + 10px `padding-right`).
+As a reminder: why is `#header` 530px wide? We want it to be the same width as the two elements below it. The actual width that `#header` is taking up is 560px:
+
++ 530px `width` 
++ 5px `margin-left` 
++ 5px `margin-right` 
++ 10px `padding-left` 
++ 10px `padding-right`
 
 So: 
 
-400px (`width` of `#content`) 
++ 400px (`width` of `#content`) 
 + 5px (`margin-left` of `#content`) 
 + 10px (`padding-left` of `#content`) 
 + 10px (`padding-right` of `#content`) 
