@@ -4,7 +4,9 @@ We've discussed how there are different layers of CSS that affect the styles tha
 
 The tricky bit about the default browser styles is that they are all different. Chrome, Safari, Firefox, Internet Explorer... they all have a slightly different default stylesheet to contend with.
 
-We do have a tool that we can use to combat this though in favor of consistency of display: The CSS Reset.
+This becomes more important as we work with layouts, particularly floats. The browser defaults will cause unintended side effects that will get in the way of a consistent cross-browser display.
+
+Fortunately, we do have a tool to combat these undesired side effects: The CSS Reset.
 
 ## What It Is
 
