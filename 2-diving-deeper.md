@@ -74,7 +74,7 @@ So:
 
 Hashtag math.
 
-## Clearing Floats
+## Adding a Footer
 
 Let's add a footer! Easy peasy, right? So now our layout looks like this:
 
@@ -99,3 +99,18 @@ And we'll add the following to our CSS:
 	width: 530px;
 }
 ```
+
+![image](http://i.imgur.com/HyODNTN.png)
+
+![image](http://i.imgur.com/58l5u0Y.png)
+
+Wait why? What? What happened here? I didn't float the `#footer` element, why is it doing... that? And here, boys and girls, is your intro to:
+
+## Floats Are Tricky
+
+Boy howdy are they. When you're not careful, floats will run away with your layout and your heart. But we have some tools to put this back in order.
+
+## Clearing Floats
+
+At some point, we have to be able to stay "I do not want this element to wrap around the floated elements". And we can.
+
