@@ -127,3 +127,61 @@ Now we have something a lot closer to what we're looking for.
 
 ![image](http://i.imgur.com/uVKDWno.png)
 
+## Bonus Round
+
+To sidetrack for a moment, let's clean up our CSS a bit. You always want to strive to write the most concise code, within reason. So going back to our current CSS:
+
+```css
+div {
+	background: red;
+	margin: 5px;
+	padding: 10px;
+}
+#header {
+	width: 530px;
+}
+#content {
+	float: left;
+	width: 400px;
+	height: 200px;
+}
+#sidebar {
+	float: left;
+	width: 100px;
+	height: 200px;
+}
+#footer {
+	width: 530px;
+	background: orange;
+	clear: both;
+}
+```
+
+This is fairly verbose, and for our small page is totally fine. But consider this:
+
+```css
+div {
+	background: red;
+	margin: 5px;
+	padding: 10px;
+}
+#header, #footer {
+	width: 530px;
+}
+#content, #sidebar {
+	float: left;
+	height: 200px;
+}
+#content {
+	width: 400px;
+}
+#sidebar {
+	width: 100px;
+}
+#footer {
+	background: orange;
+	clear: both;
+}
+```
+
+By combining selectors with common `properties` and `values`, we can change the values in one place. Want to change the hide of `#sidebar` and `#content`? The `float`? You can now do it in one place instead of two.
