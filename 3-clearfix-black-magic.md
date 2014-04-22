@@ -29,7 +29,7 @@ CSS, you crazy. It's as if that parent div barely exists, or at least is certain
 
 Basically, because all of the `#parent` children divs have been removed from the natural flow of the document, the `#parent` has trouble calculating its own height. Thankfully, we can help the browser out a bit. 
 
-The `clearfix` hack has been around for some time, and has gotten simpler and simpler every year. Simply add this class to your stylesheet:
+The `clearfix` hack has been around for some time, and has gotten [simpler and simpler](http://css-tricks.com/snippets/css/clear-fix/) every year. Simply add this class to your stylesheet:
 
 ```css
 .clearfix:after {
