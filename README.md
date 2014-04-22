@@ -61,7 +61,7 @@ If we kept the HTML exactly the same and simply changed the CSS `float` property
 
 ![image](http://i.imgur.com/hB18MXO.png)
 
-Remember, we didn't touch anything in the structure of our HTML document, all we did was change the CSS:
+Remember, **we didn't touch anything in the structure of our HTML document**, all we did was change the CSS:
 
 ```css
 img {
