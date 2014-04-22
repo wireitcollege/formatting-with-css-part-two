@@ -74,3 +74,12 @@ All of the following will yield the same result:
 	</div>
 </div>
 ```
+
+## In the Wild
+
+This is a very common technique to stick the navigation to the top of the page so that it is available to the user no matter where they scroll:
+
++ [https://www.facebook.com/](https://www.facebook.com/)
++ [http://mashable.com/](http://mashable.com/)
++ [http://hypetrak.com/](http://hypetrak.com/)
++ [http://lifehacker.com/](http://lifehacker.com/)
