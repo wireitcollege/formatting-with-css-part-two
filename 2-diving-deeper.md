@@ -184,4 +184,4 @@ div {
 }
 ```
 
-By combining selectors with common `properties` and `values`, we can change the values in one place. Want to change the width of `#sidebar` and `#content`? The `float`? You can now do it in one place instead of two.
+By combining selectors with common `properties` and `values`, we can change the values in one place. Want to change the height of `#sidebar` and `#content`? The `float`? You can now do it in one place instead of two.
