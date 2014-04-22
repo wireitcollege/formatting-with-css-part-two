@@ -76,7 +76,7 @@ Boomtown, U.S.A. That is the essence of floats. It removes the element from the 
 
 The `float` property has four valid values: `left`, `right`, `none`, and `inherit`.
 
-We've already covered `left`, and `none`, let's take a look at the other two.
+We've already covered `left` and `right`, let's take a look at the other two.
 
 ### None
 
