@@ -12,24 +12,24 @@ There are a couple of common layouts that floats work really well for, let's exp
 	</head>
 	<body>
 		<div id="gallery" class="clearfix">
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
-			<img src="old-time-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
+			<img src="old-timey-scooter-cat.jpg" />
 		</div>
 	</body>
 </html>
@@ -58,3 +58,59 @@ body {
 ```
 
 ![image](http://i.imgur.com/oXwTBQJ.jpg)
+
+### How Many Items in a Row
+
+Without setting any parameters, there will be as many items in a grid row as the width of the entire window allows. If you were to resize your window, any items that don't fit in the row would simply drop down to the next one, creating more rows.
+
+But let's say you only want four items per row. There are a couple of ways to do this.
+
+### Resize the Parent Element
+
+You could simply resize the width of the `#gallery` element to the total width of four `img` elements:
+
+```css
+#gallery {
+	border: 1px solid red;
+	padding: 10px;
+	width: 888px;
+}
+```
+
+![image](http://i.imgur.com/yIlztGQ.png)
+
+### Using the Clear Property
+
+You could also use the `clear` property to force floated items to drop down to the next line. In this case, we would have to alter our HTML a bit:
+
+```html
+<img src="old-timey-scooter-cat.jpg" />
+<img src="old-timey-scooter-cat.jpg" />
+<img src="old-timey-scooter-cat.jpg" />
+<img src="old-timey-scooter-cat.jpg" />
+<img src="old-timey-scooter-cat.jpg" class="new-row" />
+<img src="old-timey-scooter-cat.jpg" />
+<img src="old-timey-scooter-cat.jpg" />
+<img src="old-timey-scooter-cat.jpg" />
+<img src="old-timey-scooter-cat.jpg" class="new-row" />
+<img src="old-timey-scooter-cat.jpg" />
+<img src="old-timey-scooter-cat.jpg" />
+<img src="old-timey-scooter-cat.jpg" />
+<img src="old-timey-scooter-cat.jpg" class="new-row" />
+<img src="old-timey-scooter-cat.jpg" />
+<img src="old-timey-scooter-cat.jpg" />
+<img src="old-timey-scooter-cat.jpg" />
+<img src="old-timey-scooter-cat.jpg" class="new-row" />
+<img src="old-timey-scooter-cat.jpg" />
+```
+Leaving the `#gallery` width unspecified, we can now simply add the `.new-row` class to our stylesheet:
+
+```css
+.new-row {
+	clear: left;
+}
+```
+
+This gives us a similar result:
+
+![image](http://i.imgur.com/LnLeUWs.jpg)
