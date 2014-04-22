@@ -77,7 +77,7 @@ All of the following will yield the same result:
 
 ## In the Wild
 
-This is a very common technique to stick the navigation to the top of the page so that it is available to the user no matter where they scroll:
+This is a very common technique to stick the navigation to the top or side of the page so that it is available to the user no matter where they scroll:
 
 + [https://www.facebook.com/](https://www.facebook.com/)
 + [http://mashable.com/](http://mashable.com/)
