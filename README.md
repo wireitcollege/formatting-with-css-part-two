@@ -4,9 +4,9 @@ So now that we have positioning in our toolkit, there is another essential CSS l
 
 ## Images in a Magazine
 
-An easy way to think about floats is to think about images in a magazine. I know, print is dead. Just roll with me on this one.
+An easy way to consider floats is to think about images in a magazine. I know, print is dead. Just roll with me on this one.
 
-So let's pretend that we are laying out a page in a magazine, and we want to include an image. With everything we know thus far, we might do it like this:
+So let's pretend that we are laying out a page in a magazine, and we want to include an image. With everything we know thus far, we might do something like this:
 
 ```html
 <html>
@@ -32,7 +32,7 @@ That's ok and all, but it doesn't look much like a magazine.
 
 ## Enter Floats
 
-Using floats, we can make this look a lot better. In our stylesheet, let's add a new declaration:
+Using floats, we can make this look a lot better. In our stylesheet, let's add a new selector and a declaration:
 
 ```css
 img {
@@ -44,7 +44,7 @@ img {
 
 Closer! All we did is add `float: left` to the `img` tag. This removes the image from the normal flow of the document and allows the text to wrap around it. But the text is all crunched up on the image on the right hand side. How do we fix that?
 
-Well, if you remember last week, we can set a `margin-right` property to the our `img` declaration to give it a little bit of space.
+Well, if you remember last week, we can set a `margin-right` property to the our `img` selector to give it a little bit of space.
 
 ```css
 img {
@@ -60,5 +60,14 @@ Now we're cooking with fire. But our editor called up and hates the photo on the
 If we kept the HTML exactly the same and simply changed the CSS `float` property value to `right` and change `margin-right` to `margin-left`, we'd get this:
 
 ![image](http://i.imgur.com/hB18MXO.png)
+
+Remember, we didn't touch anything in the structure of our HTML document, all we did was change the CSS:
+
+```css
+img {
+	float: right;
+	margin-left: 10px;
+}
+```
 
 Boomtown, U.S.A. That is the essence of floats. It removes the element from the natural flow of the document and allows other elements to wrap around it.
