@@ -6,7 +6,7 @@ The easiest way to think about floats is to think about images in a magazine.
 
 ![image](http://i.imgur.com/FAWlqEV.png)
 
-In this case, the image is "floated" to the left (with a little margin on the right hand side to separate it from the text):
+In this case, the image is "floated" to the left:
 
 ```html
 <html>
@@ -29,4 +29,8 @@ In this case, the image is "floated" to the left (with a little margin on the ri
 </html>
 ```
 
-All we did is add `float: left` to the `img` tag. This removes the image from the normal flow of the document and allows the text to wrap around it.
+All we did is add `float: left` to the `img` tag. (We also added a little margin on the right hand side to separate it from the text). This removes the image from the normal flow of the document and allows the text to wrap around it.
+
+If we kept the HTML exactly the same and simply changed the CSS `float` property value to `right`, we'd get this:
+
+![image](http://i.imgur.com/hB18MXO.png)
