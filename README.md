@@ -28,3 +28,5 @@ In this case, the image is "floated" to the left (with a little margin on the ri
 	</body>
 </html>
 ```
+
+All we did is add `float: left` to the `img` tag. This removes the image from the normal flow of the document and allows the text to wrap around it.
