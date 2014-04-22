@@ -1,3 +1,10 @@
+# Fixed Positioning
+
+So far we've explored a couple different values for the `position` property: `static`, `relative`, and `absolute`. There exists yet another `position` value: `fixed`.
+
+Fixed positioning works in relation to the browser window, no questions asked. It doesn't matter what `position` value its parent element has, it aligns itself with the window, and it stays there.
+
+```html
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css" />
@@ -15,3 +22,19 @@
 		<p>Jerky shank prosciutto, short ribs ball tip pastrami salami pork pork belly tongue meatball bacon fatback doner filet mignon.  Boudin filet mignon chuck ham hock, fatback sirloin capicola bresaola bacon strip steak jowl spare ribs rump.  Turducken boudin capicola kevin, bresaola shank pork belly spare ribs ham hock pork chop hamburger pork loin porchetta swine.  Venison pork chop beef ribs, pork belly hamburger tongue pork beef.  Bacon ham prosciutto, shankle sirloin pork porchetta kielbasa rump shoulder.</p>
 	</body>
 </html>
+```
+
+```css
+#fixed-div {
+	width: 200px;
+	height: 200px;
+	background: red;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+```
+
+![image](http://i.imgur.com/mOlZMcN.png)
+
+It doesn't matter where you scroll, or where `#fixed-div` resides within the DOM, it will always be in the upper left hand corner of the window.
