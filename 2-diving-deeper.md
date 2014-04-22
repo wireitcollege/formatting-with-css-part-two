@@ -97,10 +97,11 @@ And we'll add the following to our CSS:
 ```css
 #footer {
 	width: 530px;
+	background: orange;
 }
 ```
 
-![image](http://i.imgur.com/HyODNTN.png)
+![image](http://i.imgur.com/xzLqWGL.png)
 
 ![image](http://i.imgur.com/58l5u0Y.png)
 
