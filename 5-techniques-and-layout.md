@@ -65,7 +65,7 @@ Without setting any parameters, there will be as many items in a grid row as the
 
 But let's say you only want four items per row. There are a couple of ways to do this.
 
-### Resize the Parent Element
+#### Resize the Parent Element
 
 You could simply resize the width of the `#gallery` element to the total width of four `img` elements:
 
@@ -79,7 +79,7 @@ You could simply resize the width of the `#gallery` element to the total width o
 
 ![image](http://i.imgur.com/yIlztGQ.png)
 
-### Using the Clear Property
+#### Using the Clear Property
 
 You could also use the `clear` property to force floated items to drop down to the next line. In this case, we would have to alter our HTML a bit:
 
